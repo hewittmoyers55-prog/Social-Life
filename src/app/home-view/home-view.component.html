@@ -1,0 +1,14 @@
+<div class="column-layout dashboard-header-block">
+  <h3 class="content">
+    Manage Screen Time
+  </h3>
+  <p class="content">
+    Set limits for your apps and track your progress.
+  </p>
+</div>
+<igx-grid [data]="northwindEmployees" primaryKey="employeeID" [allowFiltering]="true" filterMode="excelStyleFilter" class="app-list-grid">
+  <igx-column field="appName" header="App Name" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
+  <igx-column field="screenTimeLimit" header="Screen Time Limit" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
+  <igx-column field="status" header="Status" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
+  <igx-column header="Actions" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
+</igx-grid>

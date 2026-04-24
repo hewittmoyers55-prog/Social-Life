@@ -1,0 +1,38 @@
+<igx-navbar class="screen-time-nav-bar">
+  <igx-navbar-action>
+    <button igxIconButton="flat" [igxToggleAction]="screenTimeNavDrawer">
+      <igx-icon>
+        menu
+      </igx-icon>
+    </button>
+  </igx-navbar-action>
+  <igx-navbar-title class="navbar-content">
+    <h6 class="h6">
+      Screen Time Challenge
+    </h6>
+  </igx-navbar-title>
+  <button igxIconButton="flat" class="settings-button">
+    <igx-icon class="icon">
+      settings
+    </igx-icon>
+  </button>
+</igx-navbar>
+<div class="row-layout main-content-layout">
+  <igx-nav-drawer [pin]="true" width="320px" #screenTimeNavDrawer class="screen-time-nav-drawer">
+    <ng-template igxDrawerMini></ng-template>
+    <ng-template igxDrawer>
+      <div igxDrawerItem [active]="isActive(`/home-view`)" [routerLink]="[`/home-view`]">
+        <span>Home</span>
+      </div>
+      <div igxDrawerItem [active]="isActive(`/challenge-view`)" [routerLink]="[`/challenge-view`]">
+        <span>Challenges</span>
+      </div>
+      <div igxDrawerItem [active]="isActive(`/profile-view`)" [routerLink]="[`/profile-view`]">
+        <span>Profile</span>
+      </div>
+    </ng-template>
+  </igx-nav-drawer>
+  <div class="app-view-container">
+    <router-outlet></router-outlet>
+  </div>
+</div>

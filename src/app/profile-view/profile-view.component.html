@@ -1,0 +1,41 @@
+<div class="column-layout profile-header-block">
+  <h3 class="content">
+    Your Progress
+  </h3>
+  <p class="content">
+    Track your XP and challenge history.
+  </p>
+</div>
+<igx-card class="xp-card">
+  <igx-card-header>
+    <h3 igxCardHeaderTitle>
+      Total Experience Points
+    </h3>
+    <h5 igxCardHeaderSubtitle>
+      Keep challenging yourself!
+    </h5>
+  </igx-card-header>
+  <igx-card-content>
+    <h2 class="total-xp">
+      150 XP
+    </h2>
+  </igx-card-content>
+  <igx-card-actions>
+    <ng-container igxStart></ng-container>
+    <ng-container igxEnd></ng-container>
+  </igx-card-actions>
+</igx-card>
+<igx-list class="found-items-list">
+  <igx-list-item [selected]="this.foundItemsListSelectedItem != null && this.foundItemsListSelectedItem === '0'" (click)="foundItemsListSelectedItem = '0'">
+    <span igxListLineTitle>Blue Rock</span>
+    <span igxListLineSubTitle>15 XP</span>
+  </igx-list-item>
+  <igx-list-item [selected]="this.foundItemsListSelectedItem != null && this.foundItemsListSelectedItem === '1'" (click)="foundItemsListSelectedItem = '1'">
+    <span igxListLineTitle>Shiny Green Leaf</span>
+    <span igxListLineSubTitle>30 XP</span>
+  </igx-list-item>
+  <igx-list-item [selected]="this.foundItemsListSelectedItem != null && this.foundItemsListSelectedItem === '2'" (click)="foundItemsListSelectedItem = '2'">
+    <span igxListLineTitle>Perfectly Symmetrical Feather</span>
+    <span igxListLineSubTitle>60 XP</span>
+  </igx-list-item>
+</igx-list>

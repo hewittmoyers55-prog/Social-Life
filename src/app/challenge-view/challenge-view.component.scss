@@ -1,0 +1,33 @@
+:host {
+  height: 100%;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
+  gap: 32px 0;
+}
+.content {
+  text-align: center;
+  height: max-content;
+  min-width: min-content;
+}
+.row-layout {
+  display: flex;
+}
+.challenge-options {
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
+  gap: 0 24px;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.run-challenge-button {
+  --ig-size: var(--ig-size-large);
+  height: max-content;
+  flex-shrink: 0;
+}

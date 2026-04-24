@@ -1,0 +1,42 @@
+:host {
+  height: 100%;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 24px 0;
+}
+.column-layout {
+  display: flex;
+  flex-direction: column;
+}
+.profile-header-block {
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 8px 0;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.xp-card {
+  --background: var(--ig-secondary-100);
+  height: max-content;
+  min-width: 320px;
+  max-width: 576px;
+}
+.content {
+  height: max-content;
+  min-width: min-content;
+}
+.total-xp {
+  text-align: center;
+  height: max-content;
+  min-width: min-content;
+}
+.found-items-list {
+  height: max-content;
+}

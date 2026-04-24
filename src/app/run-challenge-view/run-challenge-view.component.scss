@@ -1,0 +1,19 @@
+:host {
+  height: 100%;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
+  gap: 32px 0;
+}
+.content {
+  text-align: center;
+  height: max-content;
+  min-width: min-content;
+}
+.start-run-button {
+  --ig-size: var(--ig-size-large);
+  height: max-content;
+}

@@ -1,0 +1,25 @@
+<h3 class="find-item-title">
+  Find the Item!
+</h3>
+<igx-select type="box" class="user-input">
+  <igx-select-item value="easy">
+    Easy (15 XP)
+  </igx-select-item>
+  <igx-select-item value="medium">
+    Medium (30 XP)
+  </igx-select-item>
+  <igx-select-item value="hard">
+    Hard (60 XP)
+  </igx-select-item>
+  <label igxLabel>Difficulty</label>
+</igx-select>
+<p class="item-to-find">
+  Find: A blue rock
+</p>
+<igx-input-group type="border" class="user-input">
+  <input type="text" [(ngModel)]="value" placeholder="Describe the item" igxInput />
+  <label igxLabel>Confirm Item Found</label>
+</igx-input-group>
+<button igxButton="contained" type="button" class="confirm-found-button">
+  Confirm Found
+</button>
